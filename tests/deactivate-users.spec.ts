@@ -6,8 +6,8 @@ test('deactivate all active users from page 19 onwards', async ({ page }) => {
   await page.getByRole('link', { name: 'Login' }).click();
   await page.waitForTimeout(2000);
   
-  await page.locator('input[name="phoneNumber"], input[placeholder*="Phone"], input[id*="phone"]').first().fill('8249184554');
-  await page.locator('input[name="password"], input[placeholder*="Password"], input[id*="password"]').first().fill('Mahanga@26');
+  await page.locator('input[name="phoneNumber"], input[placeholder*="Phone"], input[id*="phone"]').first().fill('+919999999999');
+  await page.locator('input[name="password"], input[placeholder*="Password"], input[id*="password"]').first().fill('Test@123');
   await page.locator('input[name="captcha"], input[placeholder*="Captcha"], input[id*="captcha"]').first().fill('1cil61');
   await page.pause();
   await page.getByRole('button', { name: 'Login' }).click();
